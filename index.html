@@ -20,5 +20,15 @@
   </div>
 
   <script src="script.js"></script>
+  <script>
+    // Notify parent to resize iframe
+    const observer = new ResizeObserver(() => {
+      window.parent.postMessage({
+        type: 'resize',
+        height: document.body.scrollHeight + 30
+      }, '*');
+    });
+    observer.observe(document.body);
+  </script>
 </body>
 </html>
