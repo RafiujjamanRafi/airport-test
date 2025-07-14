@@ -4,14 +4,14 @@
   padding: 0;
 }
 
-body {
+html, body {
   font-family: 'Segoe UI', sans-serif;
+  background: #ffffff;
   color: #333;
-  padding: 1rem;
   overflow-x: hidden;
-  /* background removed or changed to white */
+  padding: 2rem 1rem;
+  width: 100%;
 }
-
 
 .container {
   max-width: 600px;
